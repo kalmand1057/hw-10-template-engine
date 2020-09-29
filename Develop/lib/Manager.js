@@ -6,4 +6,12 @@ class Manager extends Employee {
         super(name, id, email)
         this.officeNumber = officeNumber;
     }
+
+    officeNumber() {
+
+    }
+    
+    getRole() {
+
+    }
 }
