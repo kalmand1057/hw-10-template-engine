@@ -17,7 +17,26 @@ const { prompts } = require("inquirer");
 
 var teamMembers = [];
 
-const addMember = 
+const employee = 
+[
+    {
+        name: "name",
+        type: "input",
+        message: "What is the employee's name?"
+    },
+    {
+        name: "id",
+        type: "input",
+        message: "What is the employee's ID?"
+    },
+    {
+        name: "email",
+        type: "input",
+        message: "What is the employee's email?"
+    }
+];
+
+const employeeType = 
 {
     name: "create",
     type: "list",
@@ -25,7 +44,26 @@ const addMember =
     choices: ["Manager", "Engineer", "Intern"]
 };
 
-const 
+const manager = 
+{
+    name: "officeNumber",
+    type: "input",
+    message: "What is the manager's office number?"
+}
+
+const engineer =
+{
+    name: "github",
+    type: "input",
+    message: "What is the engineer's GitHub username?"
+}
+
+const intern = 
+{
+    name: "school",
+    type: "input",
+    message: "What school did the intern go to?"
+}
 
 // After the user has input all employees desired, call the `render` function (required
 // above) and pass in an array containing all employee objects; the `render` function will
