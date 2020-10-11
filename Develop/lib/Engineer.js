@@ -3,15 +3,17 @@ var Employee = require("./Employee");
 
 class Engineer extends Employee {
     constructor(name, id, email, github) {
-        super(mame, id, email);
+        super(name, id, email);
         this.github = github;
     }
 
-    getGitHub() {
+    getGithub() {
         return this.github;
     }
 
     getRole() {
-        return Engineer;
+        return "Engineer";
     }
 }
+
+module.exports = Engineer;
